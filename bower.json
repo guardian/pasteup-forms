@@ -1,0 +1,13 @@
+{
+  "name": "guss-forms",
+  "version": "1.0.0",
+  "main": [
+    "_forms.scss"
+  ],
+  "ignore": [
+    "CHANGELOG.md"
+  ],
+  "dependencies": {
+    "guss": "~1"
+  }
+}

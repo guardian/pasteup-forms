@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Guardian Forms</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="gs-container">
+        <h1>Forms</h1>
+        <form class="form" novalidate="" action="#">
+            <fieldset class="fieldset">
+                <div class="fieldset__heading">
+                    <h2 class="form__heading">
+                        <code>.form__heading</code>
+                        <br />
+                        Form Heading
+                    </h2>
+                    <div class="form__note">
+                        <code>.form__note</code>
+                        <br />
+                        Form Note. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ratione!
+                    </div>
+                </div>
+
+                <div class="fieldset__fields">
+                    <ul class="u-unstyled">
+                        <li class="form-field" id="email_field">
+                            <label class="label" for="email">Label</label>
+                            <div class="input">
+                                <input class="text-input" type="email" id="email" name="email" value="Lorem ipsum." autocomplete="on" autocapitalize="off" autocorrect="off" spellcheck="false" aria-required="true" />
+                            </div>
+                        </li>
+                        <li class="form-field" id="password_field">
+                            <label class="label" for="password">Another label</label>
+                            <div class="input">
+                                <input class="text-input" type="password" id="password" name="password" value="" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-required="true" />
+                            </div>
+                        </li>
+                        <li class="form-field">
+                            <div class="form-field__note">
+                                <a href="#">Forgotten your password?</a>
+                            </div>
+                            <button type="submit" class="submit-input">Submit</button>
+
+                            <label class="check-label check-label--helper" for="keepMeSignedIn">
+                                <input type="checkbox" name="keepMeSignedIn" id="keepMeSignedIn" value="true" checked="">
+                                Remember me
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+        </form>
+        <!-- TODO Add other styles: success, error, textarea… -->
+        <p><a href="https://github.com/guardian/guss-forms">Guss Forms GitHub Project</a></p>
+    </div>
+</body>
+</html>
