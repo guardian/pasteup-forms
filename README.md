@@ -13,7 +13,7 @@ bower install guss-forms --save
 ## Usage
 
 ```scss
-@import "path/to/_forms.scss";
+@import 'path/to/_forms.scss';
 ```
 
 ## Contribute
