@@ -64,14 +64,14 @@
   font-size: 1.8rem;
   line-height: 28px;
   line-height: 2.8rem;
-  font-family: "EgyptianText", georgia, serif;
+  font-family: "Guardian Text Egyptian Web", Georgia, serif;
   font-weight: bold;
   margin-left: 0;
   margin-right: 0; }
 
 .form__note,
 .form-field__note {
-  font-family: "TextSans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 14px;
   font-size: 1.4rem;
   margin-bottom: 8px;
@@ -131,7 +131,7 @@
   font-size: 1.4rem;
   line-height: 18px;
   line-height: 1.8rem;
-  font-family: "AgateSans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Guardian Agate Sans 1 Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background-color: #fdf4f3;
   border-bottom: 1px solid #ff998a;
   border-top: 1px solid #ff998a;
@@ -146,7 +146,7 @@
   font-size: 1.4rem;
   line-height: 18px;
   line-height: 1.8rem;
-  font-family: "AgateSans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Guardian Agate Sans 1 Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background-color: #f3ffdf;
   border-bottom: 1px solid #adfd2e;
   border-top: 1px solid #adfd2e;
@@ -209,7 +209,7 @@
   box-sizing: border-box;
   color: #333333;
   display: inline-block;
-  font-family: "TextSans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   padding: 8px 8px 7px;
@@ -272,7 +272,7 @@
 .check-label,
 .radio-label {
   display: block;
-  font-family: "TextSans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 14px;
   font-size: 1.4rem;
   margin-bottom: 4px;
@@ -297,16 +297,17 @@
   width: 1.3rem; }
 
 html {
-  font-family: "EgyptianText", georgia, serif;
+  font-family: "Guardian Text Egyptian Web", Georgia, serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-size: 62.5%;
   font-size: calc(1em * .625); }
 
 body {
-  color: #333333;
   font-size: 1.6em;
   line-height: 1.5; }
+body {
+  color: #333333; }
 
 .gs-container {
   position: relative;
