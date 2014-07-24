@@ -9,6 +9,6 @@
     "demo"
   ],
   "dependencies": {
-    "guss": "~1"
+    "guss": "~2"
   }
 }
