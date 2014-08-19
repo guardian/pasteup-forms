@@ -48,11 +48,140 @@
  * </div>
  *
  */
-/* ==========================================================================
-   Guss: forms
-   ========================================================================== */
-/* Base form styles
-   ========================================================================== */
+/**
+ * Fieldset's `border-top` style.
+ * 
+ * @type List
+ *
+ * @requires {function} guss-colour
+ */
+/**
+ * Text fields' `font-family`.
+ * 
+ * @type List
+ *
+ * @requires {variable} f-sans-serif-text
+ */
+/**
+ * Text fields' `color`.
+ * 
+ * @type Color
+ *
+ * @requires {function} guss-colour
+ */
+/**
+ * Text fields' `border-color`.
+ * 
+ * @type Color
+ *
+ * @requires {function} guss-colour
+ */
+/**
+ * Text fields' `border-color` when field is focused.
+ * 
+ * @type Color
+ *
+ * @requires {function} guss-colour
+ */
+/**
+ * Form error `color`.
+ * 
+ * @type Color
+ *
+ * @requires {function} guss-colour
+ */
+/**
+ * Form error `background-color`.
+ * 
+ * @type Color
+ */
+/**
+ * Form error `border-color`.
+ * 
+ * @type Color
+ */
+/**
+ * Form error fields `border-color`.
+ * 
+ * @type Color
+ *
+ * @requires {variable} guss-forms-error-colour
+ */
+/**
+ * Form success `color`.
+ * 
+ * @type Color
+ *
+ * @requires {function} guss-colour
+ */
+/**
+ * Form success `background-color`.
+ * 
+ * @type Color
+ */
+/**
+ * Form success `border-color`.
+ * 
+ * @type Color
+ */
+/**
+ * Submit button `background-color`.
+ * 
+ * @type Color
+ *
+ * @requires {function} guss-colour
+ */
+/**
+ * Submit button `background-color` when focused.
+ * 
+ * @type Color
+ *
+ * @requires {variable} guss-forms-submit-background
+ */
+/**
+ * Submit button `background-color` when active.
+ * 
+ * @type Color
+ *
+ * @requires {function} guss-colour
+ */
+/**
+ * Submit button `background-color` when disabled.
+ * 
+ * @type Color
+ *
+ * @requires {function} guss-colour
+ */
+/**
+ * Fix a bug Internet Explorer 8 where text in password fields
+ * would become invisible when `font-family` references a webfont.
+ */
+/**
+ * Default form styles
+ */
+html {
+  font-family: "Guardian Text Egyptian Web", Georgia, serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 62.5%;
+  font-size: calc(1em * .625); }
+
+body {
+  font-size: 1.6em;
+  line-height: 1.5; }
+body {
+  color: #333333; }
+
+.gs-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1140px;
+  max-width: 114rem; }
+  @media all and (min-width: 81.25em) {
+    .gs-container {
+      max-width: 1300px;
+      max-width: 130rem; } }
+
 .form {
   margin-top: 24px;
   margin-top: 2.4rem;
@@ -296,25 +425,5 @@
   width: 13px;
   width: 1.3rem; }
 
-html {
-  font-family: "Guardian Text Egyptian Web", Georgia, serif;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-size: 62.5%;
-  font-size: calc(1em * .625); }
-
-body {
-  font-size: 1.6em;
-  line-height: 1.5; }
-body {
-  color: #333333; }
-
-.gs-container {
-  position: relative;
-  margin: 0 auto;
-  max-width: 1140px;
-  max-width: 114rem; }
-  @media all and (min-width: 81.25em) {
-    .gs-container {
-      max-width: 1300px;
-      max-width: 130rem; } }
+[type=password] {
+  font-family: sans-serif !important; }
