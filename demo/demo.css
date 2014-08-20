@@ -184,9 +184,7 @@ body {
 
 .form {
   margin-top: 24px;
-  margin-top: 2.4rem;
-  margin-bottom: 24px;
-  margin-bottom: 2.4rem; }
+  margin-bottom: 24px; }
 
 .form__heading {
   font-size: 18px;
@@ -202,44 +200,36 @@ body {
 .form-field__note {
   font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 14px;
-  font-size: 1.4rem;
-  margin-bottom: 8px;
-  margin-bottom: 0.8rem; }
+  margin-bottom: 8px; }
 
 .fieldset {
   border: 0;
   border-top: 1px solid #f1f1f1;
   display: table;
   padding: 15px 0 24px;
-  padding: 1.5rem 0 2.4rem;
   margin: 0; }
 
 @media all and (min-width: 61.25em) {
   .fieldset__heading {
     display: table-cell;
     padding-right: 100px;
-    padding-right: 10rem;
     width: 220px;
-    width: 22rem;
     vertical-align: top; }
 
   .fieldset__fields {
     display: table-cell;
     vertical-align: top;
-    width: 460px;
-    width: 46rem; } }
+    width: 460px; } }
 .form-fields-group .form-field {
   margin-bottom: 0; }
 
 .form-field {
   list-style: none;
   margin: 0 0 24px;
-  margin: 0 0 2.4rem;
   padding: 0; }
 
 .form-field__submit .form-field__note {
-  margin: 0 0 24px;
-  margin: 0 0 2.4rem; }
+  margin: 0 0 24px; }
   @media all and (min-width: 61.25em) {
     .form-field__submit .form-field__note {
       float: right;
@@ -266,9 +256,7 @@ body {
   border-top: 1px solid #ff998a;
   color: #d61d00;
   margin-top: 6px;
-  margin-top: 0.6rem;
-  padding: 7px 8px;
-  padding: 0.7rem 0.8rem; }
+  padding: 7px 8px; }
 
 .form__success {
   font-size: 14px;
@@ -281,27 +269,22 @@ body {
   border-top: 1px solid #adfd2e;
   color: #4a7801;
   margin-top: 6px;
-  margin-top: 0.6rem;
-  padding: 7px 8px;
-  padding: 0.7rem 0.8rem; }
+  padding: 7px 8px; }
 
 .form-field__error {
   color: #d61d00;
-  margin-top: 6px;
-  margin-top: 0.6rem; }
+  margin-top: 6px; }
 
 .form-field__note--below {
   margin-bottom: 0;
-  margin-top: 6px;
-  margin-top: 0.6rem; }
+  margin-top: 6px; }
 
 .form-field__note--left {
   float: left; }
 
 .form-field__note--right {
   float: right;
-  margin-left: 20px;
-  margin-left: 2rem; }
+  margin-left: 20px; }
 
 .form-fields__inline ul {
   margin: 0;
@@ -314,18 +297,15 @@ body {
   line-height: 28px;
   line-height: 2.8rem;
   margin: 0 0 12px;
-  margin: 0 0 1.2rem;
   display: block; }
 
 .form-fields--date-of-birth .form-field {
-  margin: 0 18px 0 0;
-  margin: 0 1.8rem 0 0; }
+  margin: 0 18px 0 0; }
 
 .label {
   cursor: pointer;
   display: block;
-  margin-bottom: 6px;
-  margin-bottom: 0.6rem; }
+  margin-bottom: 6px; }
 
 .text-input,
 .textarea {
@@ -339,10 +319,8 @@ body {
   color: #333333;
   display: inline-block;
   font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 16px;
-  font-size: 1.6rem;
   padding: 8px 8px 7px;
-  padding: 0.8rem 0.8rem 0.7rem;
+  font-size: 16px;
   line-height: 1.4;
   outline: none;
   -webkit-border-radius: 0;
@@ -355,24 +333,20 @@ body {
   @media all and (min-width: 46.25em) {
     .text-input,
     .textarea {
-      font-size: 14px;
-      font-size: 1.4rem; } }
+      font-size: 14px; } }
 
 .textarea {
   resize: vertical; }
 
 .textarea--no-resize {
   min-height: 80px;
-  min-height: 8rem;
   resize: none; }
 
 .textarea--mid {
-  min-height: 108px;
-  min-height: 10.8rem; }
+  min-height: 108px; }
 
 .textarea--long {
-  min-height: 160px;
-  min-height: 16rem; }
+  min-height: 160px; }
 
 .submit-input {
   background: #005689;
@@ -381,13 +355,9 @@ body {
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
-  font-size: 1.4rem;
   margin: 0 20px 0 0;
-  margin: 0 2rem 0 0;
   min-width: 140px;
-  min-width: 14rem;
   padding: 11px 10px;
-  padding: 1.1rem 1rem;
   outline: none;
   text-align: center; }
   .submit-input:hover, .submit-input:focus {
@@ -403,11 +373,8 @@ body {
   display: block;
   font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 14px;
-  font-size: 1.4rem;
   margin-bottom: 4px;
-  margin-bottom: 0.4rem;
-  padding-left: 20px;
-  padding-left: 2rem; }
+  padding-left: 20px; }
 
 .check-label--helper {
   display: inline-block;
@@ -417,13 +384,9 @@ body {
 [type=radio] {
   float: left;
   height: 13px;
-  height: 1.3rem;
   margin-left: -20px;
-  margin-left: -2rem;
   margin-top: 2px;
-  margin-top: 0.2rem;
-  width: 13px;
-  width: 1.3rem; }
+  width: 13px; }
 
 [type=password] {
   font-family: sans-serif !important; }

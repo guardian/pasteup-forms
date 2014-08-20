@@ -14,10 +14,8 @@
 
 @mixin guss-forms-defaults {
     .form {
-        @include rem((
-            margin-top: $gs-baseline*2,
-            margin-bottom: $gs-baseline*2
-        ));
+        margin-top: $gs-baseline*2;
+        margin-bottom: $gs-baseline*2;
     }
 
     .form__heading {
@@ -29,38 +27,30 @@
     .form__note,
     .form-field__note {
         font-family: $guss-forms-fields-font-family;
-        @include rem((
-            font-size: 14px,
-            margin-bottom: 8px
-        ));
+        font-size: 14px;
+        margin-bottom: 8px;
     }
 
     .fieldset {
         border: 0;
         border-top: $guss-forms-fieldset-border-top;
         display: table;
-        @include rem((
-            padding: (($gs-baseline/3)*4 - 1) 0 ($gs-baseline*2)
-        ));
+        padding: (($gs-baseline/3)*4 - 1) 0 ($gs-baseline*2);
         margin: 0;
     }
 
     @include mq(desktop) {
         .fieldset__heading {
             display: table-cell;
-            @include rem((
-                padding-right: $gs-gutter*5,
-                width: gs-span(3)
-            ));
+            padding-right: $gs-gutter*5;
+            width: gs-span(3);
             vertical-align: top;
         }
 
         .fieldset__fields {
             display: table-cell;
             vertical-align: top;
-            @include rem((
-                width: gs-span(6)
-            ));
+            width: gs-span(6);
         }
     }
 
@@ -70,17 +60,14 @@
 
     .form-field {
         list-style: none;
-        @include rem((
-            margin: 0 0 $gs-baseline*2
-        ));
+        margin: 0 0 $gs-baseline*2;
         padding: 0;
     }
 
     .form-field__submit {
         .form-field__note {
-            @include rem((
-                margin: 0 0 $gs-baseline*2
-            ));
+            margin: 0 0 $gs-baseline*2;
+
             @include mq(desktop) {
                 float: right;
                 width: 60%;
@@ -110,10 +97,8 @@
         border-bottom: 1px solid $guss-forms-error-border-colour;
         border-top: 1px solid $guss-forms-error-border-colour;
         color: $guss-forms-error-colour;
-        @include rem((
-            margin-top: 6px,
-            padding: 7px ($gs-baseline/3)*2
-        ));
+        margin-top: 6px;
+        padding: 7px ($gs-baseline/3)*2;
     }
 
     .form__success {
@@ -122,24 +107,18 @@
         border-bottom: 1px solid $guss-forms-success-border-colour;
         border-top: 1px solid $guss-forms-success-border-colour;
         color: $guss-forms-success-colour;
-        @include rem((
-            margin-top: $gs-baseline/2,
-            padding: 7px ($gs-baseline/3)*2
-        ));
+        margin-top: $gs-baseline/2;
+        padding: 7px ($gs-baseline/3)*2;
     }
 
     .form-field__error {
         color: $guss-forms-error-colour;
-        @include rem((
-            margin-top: $gs-baseline/2
-        ));
+        margin-top: $gs-baseline/2;
     }
 
     .form-field__note--below {
         margin-bottom: 0;
-        @include rem((
-            margin-top: $gs-baseline/2
-        ));
+        margin-top: $gs-baseline/2;
     }
 
     .form-field__note--left {
@@ -148,9 +127,7 @@
 
     .form-field__note--right {
         float: right;
-        @include rem((
-            margin-left: $gs-gutter
-        ));
+        margin-left: $gs-gutter;
     }
 
     .form-fields__inline {
@@ -165,25 +142,19 @@
 
         .form-fields__heading {
             @include fs-bodyHeading(3, true);
-            @include rem((
-                margin: 0 0 $gs-baseline
-            ));
+            margin: 0 0 $gs-baseline;
             display: block;
         }
     }
 
     .form-fields--date-of-birth .form-field {
-        @include rem((
-            margin: 0 18px 0 0
-        ));
+        margin: 0 18px 0 0;
     }
 
     .label {
         cursor: pointer;
         display: block;
-        @include rem((
-            margin-bottom: 6px
-        ));
+        margin-bottom: 6px;
     }
 
     .text-input,
@@ -194,10 +165,8 @@
         color: $guss-forms-fields-colour;
         display: inline-block;
         font-family: $guss-forms-fields-font-family;
-        @include rem((
-            font-size: 16px,
-            padding: 8px 8px 7px
-        ));
+        padding: 8px 8px 7px;
+        font-size: 16px;
         line-height: 1.4;
         outline: none;
         @include border-radius(0);
@@ -209,9 +178,7 @@
         }
 
         @include mq(tablet) {
-            @include rem((
-                font-size: 14px
-            ));
+            font-size: 14px;
         }
     }
 
@@ -220,22 +187,16 @@
     }
 
     .textarea--no-resize {
-        @include rem((
-            min-height: ($gs-baseline/3)*20
-        ));
+        min-height: ($gs-baseline/3)*20;
         resize: none;
     }
 
     .textarea--mid {
-        @include rem((
-            min-height: $gs-baseline*9
-        ));
+        min-height: $gs-baseline*9;
     }
 
     .textarea--long {
-        @include rem((
-            min-height: ($gs-baseline/3)*40
-        ));
+        min-height: ($gs-baseline/3)*40;
     }
 
     .submit-input {
@@ -244,12 +205,10 @@
         color: #ffffff;
         cursor: pointer;
         display: inline-block;
-        @include rem((
-            font-size: 14px,
-            margin: 0 $gs-gutter 0 0,
-            min-width: gs-span(2),
-            padding: 11px $gs-gutter/2
-        ));
+        font-size: 14px;
+        margin: 0 $gs-gutter 0 0;
+        min-width: gs-span(2);
+        padding: 11px $gs-gutter/2;
         outline: none;
         text-align: center;
 
@@ -271,11 +230,9 @@
     .radio-label {
         display: block;
         font-family: $guss-forms-fields-font-family;
-        @include rem((
-            font-size: 14px,
-            margin-bottom: $gs-baseline/3,
-            padding-left: $gs-gutter
-        ));
+        font-size: 14px;
+        margin-bottom: $gs-baseline/3;
+        padding-left: $gs-gutter;
     }
 
     .check-label--helper {
@@ -286,11 +243,9 @@
     [type=checkbox],
     [type=radio] {
         float: left;
-        @include rem((
-            height: 13px,
-            margin-left: -$gs-gutter,
-            margin-top: 2px,
-            width: 13px
-        ));
+        height: 13px;
+        margin-left: -$gs-gutter;
+        margin-top: 2px;
+        width: 13px;
     }
 }
