@@ -14,6 +14,9 @@ bower install guss-forms --save
 
 ```scss
 @import 'path/to/_forms.scss';
+
+@include guss-forms-fix-ie8-password-field-webfonts-display;
+@include guss-forms-defaults;
 ```
 
 ## Contribute
