@@ -7,6 +7,6 @@
     "demo"
   ],
   "dependencies": {
-    "guss": "~2"
+    "guss": "~3"
   }
 }
