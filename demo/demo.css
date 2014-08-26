@@ -1,4 +1,135 @@
 @charset "UTF-8";
+/**
+ * `animation` prefixer.
+ *
+ * @param {*} $args
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/animation animation on MDN
+ */
+/**
+ * `animation-delay` prefixer.
+ *
+ * @param {*} $args
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay animation-delay on MDN
+ */
+/**
+ * `background-size` prefixer.
+ *
+ * @param {Arglist} $args
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/background-size background-size on MDN
+ */
+/**
+ * `border-radius` prefixer.
+ *
+ * @param {Number} $radius (5px)
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius border-radius on MDN
+ */
+/**
+ * `box-shadow` prefixer.
+ *
+ * @param {Arglist} $args
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow box-shadow on MDN
+ */
+/**
+ * `box-sizing` prefixer.
+ *
+ * @param {String} $box
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing box-sizing on MDN
+ */
+/**
+ * `column-width` prefixer. Uses `rem` if defined.
+ *
+ * @param {String} $box
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/column-width column-width on MDN
+ */
+/**
+ * `flex` prefixer.
+ *
+ * @param {Number}          $flex-grow   (0)
+ * @param {Number}          $flex-shring (1)
+ * @param {Number | String} $flex-basis  (auto)
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/flex flex on MDN
+ */
+/**
+ * `flex-direction` prefixer.
+ *
+ * @param {String} $direction row | row-reverse | column | column-reverse
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction flex-direction on MDN
+ */
+/**
+ * `flex-basis` prefixer.
+ *
+ * @param {Number | String} $value (auto)
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis flex-basis on MDN
+ */
+/**
+ * `display: flex` prefixer.
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/flex flex on MDN
+ */
+/**
+ * `flex-grow` prefixer.
+ *
+ * @param {Number} $value (0)
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow flex-grow on MDN
+ */
+/**
+ * `@keyframes` prefixer.
+ *
+ * @param {String} $name
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes @keyframes on MDN
+ */
+/**
+ * `transform: rotate()` prefixer.
+ *
+ * @param {Number} $angle
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/transform#rotate transform: rotate() on MDN
+ */
+/**
+ * `position: sticky` prefixer.
+ * Support is very limited but should be used in iOS.
+ * Note that Blink temporarily dropped support until they get their
+ * "scrolling and compositing house in order"
+ *
+ * @link http://updates.html5rocks.com/2012/08/Stick-your-landings-position-sticky-lands-in-WebKit position: sticky on WebKit
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/position#Sticky_positioning position: sticky on MDN
+ * @link https://code.google.com/p/chromium/issues/detail?id=231752 Meta bug for position: sticky on Chromium's tracker
+ */
+/**
+ * `transform` prefixer.
+ *
+ * @param {*} $args
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/transform transform on MDN
+ */
+/**
+ * `transform-origin` prefixer.
+ *
+ * @param {*} $args
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin transform-origin on MDN
+ */
+/**
+ * `transition` prefixer.
+ * Do not use when transitionning prefixed properties
+ * to avoid impossible code like `-moz-transition: -webkit-border-radius 1s`.
+ *
+ * @param {Arglist} $args
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/transition transition on MDN
+ */
 /* ==========================================================================
    Guss: row
    ========================================================================== */
@@ -47,6 +178,30 @@
  *     <div class="l-columns__item"></div>
  * </div>
  *
+ */
+/**
+ * Get a color from initial color palette
+ * 
+ * @param {String} $name                    - color to get
+ * @param {Map}    $palette ($guss-colours) - palette
+ *
+ * @requires {variable} guss-colours
+ *
+ * @return {Color | Null}
+ */
+/**
+ * Generate a color palette
+ *
+ * @param {Map}    $palette  ($guss-colours) - palette
+ * @param {String} $prefix   (c-)            - prefix
+ * @param {String} $property (color)         - property
+ *
+ * @requires {variable} guss-colours
+ */
+/**
+ * Guss default colours
+ * 
+ * @type Map
  */
 /**
  * Fieldset's `border-top` style.
@@ -188,9 +343,7 @@ body {
 
 .form__heading {
   font-size: 18px;
-  font-size: 1.8rem;
   line-height: 28px;
-  line-height: 2.8rem;
   font-family: "Guardian Text Egyptian Web", Georgia, serif;
   font-weight: bold;
   margin-left: 0;
@@ -247,9 +400,7 @@ body {
 
 .form__error {
   font-size: 14px;
-  font-size: 1.4rem;
   line-height: 18px;
-  line-height: 1.8rem;
   font-family: "Guardian Agate Sans 1 Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background-color: #fdf4f3;
   border-bottom: 1px solid #ff998a;
@@ -260,9 +411,7 @@ body {
 
 .form__success {
   font-size: 14px;
-  font-size: 1.4rem;
   line-height: 18px;
-  line-height: 1.8rem;
   font-family: "Guardian Agate Sans 1 Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background-color: #f3ffdf;
   border-bottom: 1px solid #adfd2e;
@@ -293,9 +442,7 @@ body {
     display: inline-block; }
 .form-fields__inline .form-fields__heading {
   font-size: 18px;
-  font-size: 1.8rem;
   line-height: 28px;
-  line-height: 2.8rem;
   margin: 0 0 12px;
   display: block; }
 
