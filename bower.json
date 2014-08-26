@@ -1,7 +1,9 @@
 {
   "name": "guss-forms",
   "main": [
-    "_forms.scss"
+    "_forms.scss",
+    "_forms.config.scss",
+    "_forms.mixins.scss"
   ],
   "ignore": [
     "demo"
