@@ -1,6 +1,8 @@
 /**
  * Fix a bug Internet Explorer 8 where text in password fields
  * would become invisible when `font-family` references a webfont.
+ *
+ * @group forms
  */
 @mixin guss-forms-fix-ie8-password-field-webfonts-display {
     [type=password] {
@@ -10,8 +12,9 @@
 
 /**
  * Default form styles
+ *
+ * @group forms
  */
-
 @mixin guss-forms-defaults {
     .form {
         margin-top: $gs-baseline*2;
