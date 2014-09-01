@@ -98,7 +98,7 @@ $pasteup-forms-error-border-colour: lighten($pasteup-forms-error-colour, 35%) !d
  *
  * @type Color
  *
- * @requires {variable} guss-forms-error-colour
+ * @requires {variable} pasteup-forms-error-colour
  *
  * @group forms
  */
@@ -157,7 +157,7 @@ $pasteup-forms-submit-background: guss-colour(tone-news-1, $pasteup-palette) !de
  *
  * @type Color
  *
- * @requires {variable} guss-forms-submit-background
+ * @requires {variable} pasteup-forms-submit-background
  *
  * @group forms
  */
