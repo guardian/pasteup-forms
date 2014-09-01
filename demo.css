@@ -130,44 +130,266 @@
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/transition transition on MDN
  */
+/**
+ * Default rem baseline.
+ * 
+ * @type Number
+ */
+/**
+ * Transform a value into rem.
+ *
+ * @param {Number} $value
+ * @param {Number} $baseline ($guss-rem-baseline)
+ *
+ * @requires {variable} guss-rem-baseline
+ *
+ * @return {List | Number}
+ */
+/**
+ * Output `rem` units with `px` fallback.
+ *
+ * @link http://sassmeister.com/gist/7451284 Usage
+ * 
+ * @param {Map} $properties
+ *
+ * @requires {function} rem
+ */
+/**
+ * Gutter width.
+ * 
+ * @type Number
+ */
+/**
+ * Baseline size.
+ * 
+ * @type Number
+ */
+/**
+ * Column width.
+ * 
+ * @type Number
+ */
+/**
+ * Row height.
+ * 
+ * @type Number
+ */
+/**
+ * Number of columns.
+ * 
+ * @type Number
+ */
+/**
+ * Grid span.
+ * Compute the width of a given number of grid columns.
+ *
+ * @example
+ * .element {
+ *   width: gs-span(3);
+ * }
+ *
+ * @param {Number} $n-columns
+ *
+ * @requires {variable} gs-column-width
+ * @requires {variable} gs-gutter
+ *
+ * @return {Number}
+ */
+/**
+ * Grid height.
+ * Compute the height of a given number of vertical grid units.
+ *
+ * @example
+ * .element {
+ *   padding-top: gs-height(2);
+ * }
+ *
+ * @param {Number} $n-rows
+ *
+ * @requires {variable} gs-row-height
+ * @requires {variable} gs-baseline
+ *
+ * @return {Number}
+ */
+/**
+ * Grid container.
+ * Snaps to `$gs-max-columns` columns at the wide breakpoint.
+ *
+ * @requires {mixin} mq
+ * @requires {function} gs-span
+ * @requires {variable} gs-gutter
+ * @requires {variable} gs-max-columns
+ */
+/**
+ * Grid columns helper classes, useful for quick prototyping.
+ *
+ * @example markup
+ * <div class="gs-span-3"></div>
+ *
+ * @requires {variable} gs-max-columns
+ * @requires {function} gs-span
+ */
+/**
+ * Grid system.
+ *
+ * @requires {mixin} gs-container
+ */
 /* ==========================================================================
    Guss: row
    ========================================================================== */
 /**
+ * Row utility class.
+ * 
+ * @type String
+ *
+ * @group layout
+ */
+/**
+ * When set to false, output a simpler version with a static width.
+ *
+ * @link http://caniuse.com/#feat=flexbox Flexbox support table
+ * 
+ * @type Bool
+ *
+ * @group layout
+ */
+/**
+ * Static width for older browsers.
+ * 
+ * @type Number
+ *
+ * @group layout
+ */
+/**
  * A row is an ensemble of 2, 3 or 4 items that are originally stacked
  * vertically on mobile and flow horizontally on higher breakpoints.
- * Examples: http://sassmeister.com/gist/7986076
  *
- * Usage 1: Sass mixin
- * @include guss-row('.classname');
+ * @param {String} $base-class
  *
- * Usage 2: utility class set as `$guss-row-utility-class`
- * @include guss-row-utility;
+ * @requires {variable} browser-supports-flexbox
+ * @requires {variable} guss-row-fallback-width
+ * @requires {mixin} mq
+ * @requires {mixin} flex-grow
+ * @requires {mixin} flex-basis
+ * 
+ * @link http://sassmeister.com/gist/9b6033675b0f01de21f0 Examples on Sassmeister
  *
+ * @example scss
+ *  // Sass Mixin
+ *  @include guss-row('.classname');
+ *
+ * @example scss
+ *  // Utility class set as `$guss-row-utility-class`
+ *  @include guss-row-utility;
+ *
+ * @example markup
  * <div class="l-row l-row--items-<number of items contained>">
  *     <div class="l-row__item [l-row__item--boost-2]"></div>
  *     <div class="l-row__item"></div>
  *     <div class="l-row__item"></div>
  *     <div class="l-row__item [l-row__item--boost-1]"></div>
  * </div>
+ * <!-- --boost-n modifiers are used to add visual importance to an item.
+ * Note that this applies only to browsers that support flexbox. -->
  *
- * --boost-n modifiers are used to add visual importance to an item.
- * Note that this applies only to browsers that support flexbox.
+ * @group layout
+ */
+/**
+ * Row utility.
+ *
+ * @requires {variable} guss-row-utility-class
+ * @requires {mixin} guss-row
+ *
+ * @group layout
  */
 /* ==========================================================================
    Guss: columns
    ========================================================================== */
 /**
- * A "columns pattern" will fit as many "$guss-column-min-width"-wide columns
+ * Minimum column width.
+ * 
+ * @type Number
+ *
+ * @group layout
+ */
+/**
+ * Column gutter.
+ * 
+ * @type Number
+ *
+ * @group layout
+ */
+/**
+ * Column utility class.
+ * 
+ * @type String
+ *
+ * @group layout
+ */
+/**
+ * When set to false, output a simpler version with a static width.
+ *
+ * @link http://caniuse.com/#feat=multicolumn Column support table
+ * 
+ * @type Bool
+ *
+ * @group layout
+ */
+/**
+ * Fallback width when CSS3 columns support is disabled.
+ * 
+ * @type Number
+ *
+ * @group layout
+ */
+/**
+ * Number of columns in the non-responsive version.
+ * 
+ * @type Number
+ *
+ * @group layout
+ */
+/**
+ * Width of fallback column item.
+ *
+ * @param {Number} $container-width
+ * @param {Number} $gap-between-columns
+ * @param {Number} $number-of-columns
+ *
+ * @return {Number}
+ *
+ * @group layout
+ */
+/**
+ * A "columns pattern" fits as many "$guss-column-min-width"-wide columns
  * in any type of context: full-width container, sidebar…
  *
- * Usage 1: Sass mixin
- * @include guss-columns('.classname');
- * Examples: http://sassmeister.com/gist/35288593dc035ef645e1
+ * @param {String} $base-class
+ * @param {Number} $column-min-width         ($guss-column-min-width)
+ * @param {Number} $column-gap               ($guss-column-gap)
+ * @param {Number} $columns-fallback-width   ($guss-columns-fallback-width)
+ * @param {Number} $columns-fallback-columns ($guss-columns-fallback-columns)
+ * @param {Bool}   $css3-columns-support     ($browser-supports-columns)
  *
- * Usage 2: utility class set as `$guss-columns-utility-class`
- * @include guss-columns-utility;
+ * @requires {variable} guss-column-min-width
+ * @requires {variable} guss-column-gap
+ * @requires {variable} guss-columns-fallback-width
+ * @requires {variable} guss-columns-fallback-columns
+ * @requires {variable} browser-supports-columns
+ * @requires {function} width-of-fallback-column-item
+ * @requires {function} rem
+ * @requires {mixin} mq
  *
+ * @link http://sassmeister.com/gist/5c09ed0242085ba8d705 Examples on Sassmeister
+ * 
+ * @example
+ *  // Usage 1: Sass mixin
+ *  @include guss-columns('.classname');
+ *
+ *  // Usage 2: utility class set as `$guss-columns-utility-class`
+ *  @include guss-columns-utility;
+ *
+ * @example markup
  * <div class="l-columns">
  *     <div class="l-columns__item"></div>
  *     <div class="l-columns__item"></div>
@@ -178,6 +400,15 @@
  *     <div class="l-columns__item"></div>
  * </div>
  *
+ * @group layout
+ */
+/**
+ * Column utility.
+ *
+ * @requires {mixin} guss-columns
+ * @requires {variable} guss-columns-utility-class
+ *
+ * @group layout
  */
 /**
  * Get a color from initial color palette
@@ -205,114 +436,150 @@
  */
 /**
  * Fieldset's `border-top` style.
- * 
+ *
  * @type List
  *
  * @requires {function} guss-colour
+ *
+ * @group forms
  */
 /**
  * Text fields' `font-family`.
- * 
+ *
  * @type List
  *
  * @requires {variable} f-sans-serif-text
+ *
+ * @group forms
  */
 /**
  * Text fields' `color`.
- * 
+ *
  * @type Color
  *
  * @requires {function} guss-colour
+ *
+ * @group forms
  */
 /**
  * Text fields' `border-color`.
- * 
+ *
  * @type Color
  *
  * @requires {function} guss-colour
+ *
+ * @group forms
  */
 /**
  * Text fields' `border-color` when field is focused.
- * 
+ *
  * @type Color
  *
  * @requires {function} guss-colour
+ *
+ * @group forms
  */
 /**
  * Form error `color`.
- * 
+ *
  * @type Color
  *
  * @requires {function} guss-colour
+ *
+ * @group forms
  */
 /**
  * Form error `background-color`.
- * 
+ *
  * @type Color
+ *
+ * @group forms
  */
 /**
  * Form error `border-color`.
- * 
+ *
  * @type Color
+ *
+ * @group forms
  */
 /**
  * Form error fields `border-color`.
- * 
+ *
  * @type Color
  *
  * @requires {variable} guss-forms-error-colour
+ *
+ * @group forms
  */
 /**
  * Form success `color`.
- * 
+ *
  * @type Color
  *
  * @requires {function} guss-colour
+ *
+ * @group forms
  */
 /**
  * Form success `background-color`.
- * 
+ *
  * @type Color
+ *
+ * @group forms
  */
 /**
  * Form success `border-color`.
- * 
+ *
  * @type Color
+ *
+ * @group forms
  */
 /**
  * Submit button `background-color`.
- * 
+ *
  * @type Color
  *
  * @requires {function} guss-colour
+ *
+ * @group forms
  */
 /**
  * Submit button `background-color` when focused.
- * 
+ *
  * @type Color
  *
  * @requires {variable} guss-forms-submit-background
+ *
+ * @group forms
  */
 /**
  * Submit button `background-color` when active.
- * 
+ *
  * @type Color
  *
  * @requires {function} guss-colour
+ *
+ * @group forms
  */
 /**
  * Submit button `background-color` when disabled.
- * 
+ *
  * @type Color
  *
  * @requires {function} guss-colour
+ *
+ * @group forms
  */
 /**
  * Fix a bug Internet Explorer 8 where text in password fields
  * would become invisible when `font-family` references a webfont.
+ *
+ * @group forms
  */
 /**
  * Default form styles
+ *
+ * @group forms
  */
 html {
   font-family: "Guardian Text Egyptian Web", Georgia, serif;
@@ -330,12 +597,10 @@ body {
 .gs-container {
   position: relative;
   margin: 0 auto;
-  max-width: 1140px;
-  max-width: 114rem; }
+  max-width: 1140px; }
   @media all and (min-width: 81.25em) {
     .gs-container {
-      max-width: 1300px;
-      max-width: 130rem; } }
+      max-width: 1300px; } }
 
 .form {
   margin-top: 24px;
