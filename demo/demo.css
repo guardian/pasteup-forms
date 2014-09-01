@@ -5,6 +5,8 @@
  * @param {*} $args
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/animation animation on MDN
+ * 
+ * @group css3
  */
 /**
  * `animation-delay` prefixer.
@@ -12,6 +14,8 @@
  * @param {*} $args
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay animation-delay on MDN
+ * 
+ * @group css3
  */
 /**
  * `background-size` prefixer.
@@ -19,6 +23,8 @@
  * @param {Arglist} $args
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/background-size background-size on MDN
+ * 
+ * @group css3
  */
 /**
  * `border-radius` prefixer.
@@ -26,6 +32,8 @@
  * @param {Number} $radius (5px)
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius border-radius on MDN
+ * 
+ * @group css3
  */
 /**
  * `box-shadow` prefixer.
@@ -33,6 +41,8 @@
  * @param {Arglist} $args
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow box-shadow on MDN
+ * 
+ * @group css3
  */
 /**
  * `box-sizing` prefixer.
@@ -40,6 +50,8 @@
  * @param {String} $box
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing box-sizing on MDN
+ * 
+ * @group css3
  */
 /**
  * `column-width` prefixer. Uses `rem` if defined.
@@ -47,6 +59,8 @@
  * @param {String} $box
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/column-width column-width on MDN
+ * 
+ * @group css3
  */
 /**
  * `flex` prefixer.
@@ -56,6 +70,8 @@
  * @param {Number | String} $flex-basis  (auto)
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/flex flex on MDN
+ * 
+ * @group css3
  */
 /**
  * `flex-direction` prefixer.
@@ -63,6 +79,8 @@
  * @param {String} $direction row | row-reverse | column | column-reverse
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction flex-direction on MDN
+ * 
+ * @group css3
  */
 /**
  * `flex-basis` prefixer.
@@ -70,11 +88,15 @@
  * @param {Number | String} $value (auto)
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis flex-basis on MDN
+ * 
+ * @group css3
  */
 /**
  * `display: flex` prefixer.
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/flex flex on MDN
+ * 
+ * @group css3
  */
 /**
  * `flex-grow` prefixer.
@@ -82,6 +104,8 @@
  * @param {Number} $value (0)
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow flex-grow on MDN
+ * 
+ * @group css3
  */
 /**
  * `@keyframes` prefixer.
@@ -89,6 +113,8 @@
  * @param {String} $name
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes @keyframes on MDN
+ * 
+ * @group css3
  */
 /**
  * `transform: rotate()` prefixer.
@@ -96,6 +122,8 @@
  * @param {Number} $angle
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/transform#rotate transform: rotate() on MDN
+ * 
+ * @group css3
  */
 /**
  * `position: sticky` prefixer.
@@ -106,6 +134,8 @@
  * @link http://updates.html5rocks.com/2012/08/Stick-your-landings-position-sticky-lands-in-WebKit position: sticky on WebKit
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/position#Sticky_positioning position: sticky on MDN
  * @link https://code.google.com/p/chromium/issues/detail?id=231752 Meta bug for position: sticky on Chromium's tracker
+ * 
+ * @group css3
  */
 /**
  * `transform` prefixer.
@@ -113,6 +143,8 @@
  * @param {*} $args
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/transform transform on MDN
+ * 
+ * @group css3
  */
 /**
  * `transform-origin` prefixer.
@@ -120,6 +152,8 @@
  * @param {*} $args
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin transform-origin on MDN
+ * 
+ * @group css3
  */
 /**
  * `transition` prefixer.
@@ -129,6 +163,8 @@
  * @param {Arglist} $args
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/CSS/transition transition on MDN
+ * 
+ * @group css3
  */
 /**
  * Default rem baseline.
@@ -156,28 +192,38 @@
  */
 /**
  * Gutter width.
- * 
+ *
  * @type Number
+ *
+ * @group grid-system
  */
 /**
  * Baseline size.
- * 
+ *
  * @type Number
+ *
+ * @group grid-system
  */
 /**
  * Column width.
- * 
+ *
  * @type Number
+ *
+ * @group grid-system
  */
 /**
  * Row height.
- * 
+ *
  * @type Number
+ *
+ * @group grid-system
  */
 /**
  * Number of columns.
- * 
+ *
  * @type Number
+ *
+ * @group grid-system
  */
 /**
  * Grid span.
@@ -194,6 +240,8 @@
  * @requires {variable} gs-gutter
  *
  * @return {Number}
+ *
+ * @group grid-system
  */
 /**
  * Grid height.
@@ -210,6 +258,8 @@
  * @requires {variable} gs-baseline
  *
  * @return {Number}
+ *
+ * @group grid-system
  */
 /**
  * Grid container.
@@ -219,6 +269,8 @@
  * @requires {function} gs-span
  * @requires {variable} gs-gutter
  * @requires {variable} gs-max-columns
+ *
+ * @group grid-system
  */
 /**
  * Grid columns helper classes, useful for quick prototyping.
@@ -228,11 +280,15 @@
  *
  * @requires {variable} gs-max-columns
  * @requires {function} gs-span
+ *
+ * @group grid-system
  */
 /**
  * Grid system.
  *
  * @requires {mixin} gs-container
+ *
+ * @group grid-system
  */
 /* ==========================================================================
    Guss: row
@@ -411,29 +467,477 @@
  * @group layout
  */
 /**
- * Get a color from initial color palette
+ * Data font stack
+ *
+ * @group typography
+ */
+/**
+ * Serif font stack
+ *
+ * @group typography
+ */
+/**
+ * Headline font stack
+ *
+ * @group typography
+ */
+/**
+ * Sans serif text font stack
+ *
+ * @group typography
+ */
+/**
+ * Sans serif headline font stack
+ *
+ * @group typography
+ */
+/**
+ * Default font scale settings
+ * See font-scale.html and font-scale.png for visual representations
+ *
+ * @group typography
+ */
+/**
+ * Grab all levels of a font the font-scale
+ *
+ * @param {String} $name - Name of the font-scale matrix (eg: headline)
+ * @param {Map} $font-scale ($font-scale)
+ *
+ * @example
+ *  font-size: get-scale(header);
+ *
+ * @requires {variable} $font-scale
+ *
+ * @return {Map}
+ *
+ * @group typography
+ */
+/**
+ * Grab info for a particular level of a font-scale
+ *
+ * @param {String} $name - Name of the font-scale in the matrix (eg: headline)
+ * @param {Number} $level - Level in the matrix
+ * @param {Map} $font-scale ($font-scale)
+ *
+ * @example
+ *  font-size: get-scale-level(header, 1);
+ *
+ * @requires {variable} $font-scale
+ * @requires {function} get-scale
+ *
+ * @return {Map}
+ *
+ * @group typography
+ */
+/**
+ * Get a font-size for a level in the font-scale matrix
+ *
+ * @param {String} $name - Name of the font-scale in the matrix (eg: headline)
+ * @param {Number} $level - Level in the matrix
+ * @param {Map} $font-scale - Configuration
+ *
+ * @example
+ *  font-size: get-font-size(header, 3);
+ *
+ * @requires {variable} $font-scale
+ * @requires {function} convert-to-px
+ * @requires {function} get-scale-level
+ *
+ * @return {Number}
+ *
+ * @group typography
+ */
+/**
+ * Get a line-height for a level in the font-scale matrix
+ *
+ * @param {String} $name - Name of the font-scale in the matrix (eg: headline)
+ * @param {Number} $level - Level in the matrix
+ * @param {Map} $font-scale - Configuration
+ *
+ * @example
+ *  font-size: get-line-height(header, 3);
+ *
+ * @requires {variable} $font-scale
+ * @requires {function} convert-to-px
+ * @requires {function} get-scale-level
+ *
+ * @return {Number}
+ *
+ * @group typography
+ */
+/**
+ * Turn any value into pixels
+ *
+ * @param {Number} $value
+ *
+ * @example
+ *  font-size: convert-to-px(14); // 14px
+ *
+ * @return {Number}
+ *
+ * @group typography
+ */
+/**
+ * Default typography settings, to be included as soon as possible in the HTML
+ * 1. Make type rendering look crisper
+ * 2. Set baseline font size to 10px
+ * 3. Fixes an IE11 bug where rouding with % would create scaling issues  
+ *    See http://bit.ly/1g4X0bX — thanks @7studio and @dawitti
+ * 4. Set default text size back to 16px (at default zoom level)
+ * 5. Set relative line spacing to 1.5 (16px * 1.5 = 24px)
+ *
+ * @param {String} $font-family ($f-serif-text) - Default global font
+ *
+ * @requires {variable} $f-serif-text
+ *
+ * @group typography
+ */
+/**
+ * Font-size and line-height shorthand
+ *
+ * @param {Number} $size
+ * @param {Number} $line-height ($size)
+ *
+ * @example
+ *  @include font-size(18, 24);
+ *
+ * @requires {function} convert-to-px
+ *
+ * @group typography
+ */
+/**
+ * Font styling shorthand  
+ * Note: prefer the usage of the font-scale mixins to stick to the font scale
+ *
+ * @param {String} $family
+ * @param {String} $weight
+ * @param {Number} $size
+ * @param {Number} $line-height ($size)
+ *
+ * @example
+ *  @include font(arial, bold, 18, 24);
+ *
+ * @requires {mixin} font-size
+ *
+ * @group typography
+ */
+/**
+ * Header family and weight properties.
+ *
+ * @requires {variable} $f-serif-headline
+ *
+ * @group typography
+ */
+/**
+ * Header typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family, weight)
+ *  @include fs-header(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-header(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-header
+ *
+ * @group typography
+ */
+/**
+ * Healdine family and weight properties.
+ *
+ * @requires {variable} $f-serif-headline
+ *
+ * @group typography
+ */
+/**
+ * Headline typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family, weight)
+ *  @include fs-headline(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-headline(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-headline
+ *
+ * @group typography
+ */
+/**
+ * Body Heading family and weight properties.
+ *
+ * @requires {variable} $f-serif-text
+ *
+ * @group typography
+ */
+/**
+ * Body Heading typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family, weight)
+ *  @include fs-bodyHeading(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-bodyHeading(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-bodyHeading
+ *
+ * @group typography
+ */
+/**
+ * Body Copy family property.
+ *
+ * @requires {variable} $f-serif-text
+ *
+ * @group typography
+ */
+/**
+ * Body Copy typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family)
+ *  @include fs-bodyCopy(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-bodyCopy(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-bodyCopy
+ *
+ * @group typography
+ */
+/**
+ * Data family property.
+ *
+ * @requires {variable} $f-data
+ *
+ * @group typography
+ */
+/**
+ * Data typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family)
+ *  @include fs-data(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-data(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-data
+ *
+ * @group typography
+ */
+/**
+ * Text Sans family property.
+ *
+ * @requires {variable} $f-sans-serif-text
+ *
+ * @group typography
+ */
+/**
+ * Text Sans typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family)
+ *  @include fs-textSans(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-textSans(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-textSans
+ *
+ * @group typography
+ */
+/**
+ * Headline Sans family property.  
+ * Is not currently integrated into our font scale matrix,
+ * hence no `fs-` mixin; currently we're just using it as a
+ * replacement font in a few places.
+ *
+ * @requires {variable} $f-sans-serif-headline
+ *
+ * @group typography
+ */
+/**
+ * An example of a colour palette to be used with guss-colours
+ *
+ * If you're looking for the guardian colour palette: https://github.com/guardian/pasteup-palette
  * 
- * @param {String} $name                    - color to get
+ * @type Map
+ *
+ * @group colours
+ */
+/**
+ * Get a colour from a given colour palette.
+ * 
+ * @param {String} $name                    - colour to get
  * @param {Map}    $palette ($guss-colours) - palette
  *
  * @requires {variable} guss-colours
  *
  * @return {Color | Null}
+ *
+ * @group colours
  */
 /**
- * Generate a color palette
+ * Generate helper classes for a given colour palette  
+ * Outputs rules such as: `.c-red { color: red; }`.
  *
  * @param {Map}    $palette  ($guss-colours) - palette
- * @param {String} $prefix   (c-)            - prefix
- * @param {String} $property (color)         - property
+ * @param {String} $prefix   ("c-")          - prefix
+ * @param {String} $property ("color")       - property
  *
  * @requires {variable} guss-colours
+ *
+ * @group colours
  */
 /**
- * Guss default colours
+ * Default colour palette
  * 
  * @type Map
+ *
+ * @group colours
  */
+.c-guardian-brand {
+  color: #005689; }
+
+.c-guardian-brand-light {
+  color: #94b1ca; }
+
+.c-guardian-brand-dark {
+  color: #00456e; }
+
+.c-error {
+  color: #d61d00; }
+
+.c-success {
+  color: #4a7801; }
+
+.c-neutral-1 {
+  color: #333333; }
+
+.c-neutral-2 {
+  color: #767676; }
+
+.c-neutral-3 {
+  color: #bdbdbd; }
+
+.c-neutral-4 {
+  color: gainsboro; }
+
+.c-neutral-5 {
+  color: #dfdfdf; }
+
+.c-neutral-6 {
+  color: #eaeaea; }
+
+.c-neutral-7 {
+  color: #f1f1f1; }
+
+.c-neutral-8 {
+  color: #f6f6f6; }
+
+.c-neutral-1-warm {
+  color: #333333; }
+
+.c-neutral-2-warm {
+  color: #767676; }
+
+.c-neutral-3-warm {
+  color: #bdbdbd; }
+
+.c-neutral-4-warm {
+  color: gainsboro; }
+
+.c-neutral-5-warm {
+  color: #e3e3db; }
+
+.c-neutral-6-warm {
+  color: #edede7; }
+
+.c-neutral-7-warm {
+  color: #f4f4ee; }
+
+.c-neutral-8-warm {
+  color: #f6f6f6; }
+
+.c-tone-news-1 {
+  color: #005689; }
+
+.c-tone-news-2 {
+  color: #4bc6df; }
+
+.c-tone-features-1 {
+  color: #951c55; }
+
+.c-tone-features-2 {
+  color: #f66980; }
+
+.c-tone-features-3 {
+  color: #b82266; }
+
+.c-tone-features-4 {
+  color: #7d0068; }
+
+.c-tone-comment-1 {
+  color: #e6711b; }
+
+.c-tone-comment-2 {
+  color: #ffbb00; }
+
+.c-tone-comment-3 {
+  color: #ffcf4c; }
+
+.c-tone-media-1 {
+  color: #333333; }
+
+.c-tone-media-2 {
+  color: #484848; }
+
+.c-tone-media-3 {
+  color: #ffbb00; }
+
+.c-tone-live-1 {
+  color: #b51800; }
+
+.c-tone-live-2 {
+  color: #cc2b12; }
+
 /**
  * Fieldset's `border-top` style.
  *
@@ -507,7 +1011,7 @@
  *
  * @type Color
  *
- * @requires {variable} guss-forms-error-colour
+ * @requires {variable} pasteup-forms-error-colour
  *
  * @group forms
  */
@@ -548,7 +1052,7 @@
  *
  * @type Color
  *
- * @requires {variable} guss-forms-submit-background
+ * @requires {variable} pasteup-forms-submit-background
  *
  * @group forms
  */
@@ -584,16 +1088,19 @@
 html {
   font-family: "Guardian Text Egyptian Web", Georgia, serif;
   -moz-osx-font-smoothing: grayscale;
+  /* 1 */
   -webkit-font-smoothing: antialiased;
+  /* 1 */
   font-size: 62.5%;
-  font-size: calc(1em * .625); }
+  /* 2 */
+  font-size: calc(1em * .625);
+  /* 3 */ }
 
 body {
   font-size: 1.6em;
-  line-height: 1.5; }
-body {
-  color: #333333; }
-
+  /* 4 */
+  line-height: 1.5;
+  /* 5 */ }
 .gs-container {
   position: relative;
   margin: 0 auto;
