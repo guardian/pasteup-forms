@@ -1,8 +1,8 @@
-# Guss Forms
+# Pasteup Forms
 
-Part of the [Guss](https://github.com/guardian/guss) collection.
+Part of the [Pasteup-forms](https://github.com/guardian/pasteup) collection.
 
-<http://guardian.github.io/guss-forms>
+<http://guardian.github.io/pasteup-forms>
 
 ## Installation
 
