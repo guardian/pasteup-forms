@@ -33,8 +33,10 @@ category: Common
                         <a href="#">Forgotten your password?</a>
                     </div>
                     <button type="submit" class="submit-input">Submit</button>
-                    <label class="check-label check-label--helper" for="field-3">Remember me</label>
-                    <input type="checkbox" name="field-3" />
+                    <label class="check-label check-label--helper">
+                        <input type="checkbox" />
+                        Remember me
+                    </label>
                 </li>
             </ul>
         </div>
