@@ -1,7 +1,7 @@
 {
   "name": "pasteup-forms",
   "description": "Forms component in the Pasteup collection",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "main": [
     "_forms.scss",
     "_forms.config.scss",
