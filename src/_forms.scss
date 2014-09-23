@@ -139,7 +139,7 @@ category: Common
 }
 
 .form__error {
-    @include fs-data(4);
+    @include fs-textSans(2);
     background-color: $pasteup-forms-error-background;
     border-bottom: 1px solid $pasteup-forms-error-border-colour;
     border-top: 1px solid $pasteup-forms-error-border-colour;
@@ -149,7 +149,7 @@ category: Common
 }
 
 .form__success {
-    @include fs-data(4);
+    @include fs-textSans(2);
     background-color: $pasteup-forms-success-background;
     border-bottom: 1px solid $pasteup-forms-success-border-colour;
     border-top: 1px solid $pasteup-forms-success-border-colour;
