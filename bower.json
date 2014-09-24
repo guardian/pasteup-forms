@@ -1,7 +1,7 @@
 {
   "name": "pasteup-forms",
   "description": "Forms component in the Pasteup collection",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "main": [
     "_forms.scss",
     "_forms.config.scss",
@@ -13,7 +13,7 @@
     "url": "http://github.com/guardian/pasteup-forms.git"
   },
   "dependencies": {
-    "pasteup-palette": "~2.1.0",
+    "pasteup-palette": "~3.0.0",
     "guss-colours": "~3.0.0",
     "guss-typography": "~3.0.0",
     "guss-grid-system": "~1.2.1",
