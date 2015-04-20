@@ -109,7 +109,7 @@ category: Common
 }
 
 .fieldset__headline {
-    color: $pasteup-forms-label-colour;
+    color: $pasteup-forms-fieldset-headline-colour;
     @include fs-header(3);
     margin: 0;
 }
