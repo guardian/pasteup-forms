@@ -43,6 +43,13 @@ module.exports = function(grunt) {
                     ],
                     dest: 'build',
                     ext: '.min.css'
+                },
+                {
+                    expand: true,
+                    cwd: 'cortana',
+                    src: 'base.scss',
+                    dest: 'build',
+                    ext: '.min.css'
                 }]
             }
         },
