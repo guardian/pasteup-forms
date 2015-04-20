@@ -29,6 +29,22 @@ category: Common
                 <input type="text" class="input-text" name="field-3" id="field-3">
                 <p class="form-field__error-message">This field has an error</p>
             </div>
+            <div class="form-field">
+                <label class="label" for="option-one">
+                    <input type="radio" class="pseudo-radio-input" name="field-4" id="option-one" value="option-one" checked="checked">
+                    <div class="pseudo-radio">
+                        <div class="pseudo-radio__header">Option one</div>
+                        <p class="pseudo-radio__note">Lorem ipsum dolor sit amet</p>
+                    </div>
+                </label>
+                <label class="label" for="option-two">
+                    <input type="radio" class="pseudo-radio-input" name="field-4" id="option-two" value="option-two">
+                    <div class="pseudo-radio">
+                        <div class="pseudo-radio__header">Option two</div>
+                        <p class="pseudo-radio__note">Consectetur adipisicing elit</p>
+                    </div>
+                </label>
+            </div>
         </div>
     </fieldset>
     <fieldset class="fieldset fieldset--simple">
@@ -43,6 +59,8 @@ category: Common
 </form>
 ```
 */
+
+@import 'mixins';
 
 /**
  * Fix a bug Internet Explorer 8 where text in password fields
@@ -259,4 +277,51 @@ category: Common
     outline: 0;
     background-color: #ffffff;
     font-weight: bold;
+}
+
+// Psuedo radio form inputs
+// ============================================================================
+
+.pseudo-radio {
+    @include box-sizing(border-box);
+    width: 100%;
+    border: $pasteup-forms-radio-border;
+    padding: rem($gs-baseline) rem($gs-gutter) rem($gs-baseline) rem(36px);
+    position: relative;
+
+    &:hover {
+        border: $pasteup-forms-radio-border-hover;
+    }
+
+    &:before {
+        @include radio-circle($pasteup-forms-radio-colour);
+    }
+}
+
+.pseudo-radio-input {
+    display: none;
+
+    &:checked + .pseudo-radio {
+        border: $pasteup-forms-radio-border-checked;
+
+        &:before {
+            background-color: $pasteup-forms-radio-colour-checked;
+        }
+    }
+}
+
+.pseudo-radio__label {
+    @include fs-bodyCopy(2);
+    line-height: 1.2;
+}
+
+.pseudo-radio__header {
+    @include fs-bodyHeading(2);
+    line-height: 1.2;
+    margin-bottom: rem($gs-baseline / 2);
+}
+
+.pseudo-radio__note {
+    @include fs-textSans(3);
+    margin: 0;
 }

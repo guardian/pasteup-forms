@@ -1,0 +1,22 @@
+/**
+ * Output a styled pseudo radio button
+ *
+ * @param {Color} $colour
+ *
+ * @requires {mixin} border-radius
+ * @requires {variable} gs-baseline
+ * @requires {variable} gs-gutter
+ *
+ * @group forms
+ */
+@mixin radio-circle($colour) {
+    @include border-radius (50%);
+    content: ' ';
+    background-color: $colour;
+    width: rem($gs-baseline + 4);
+    height: rem($gs-baseline + 4);
+    display: block;
+    position: absolute;
+    left: rem($gs-baseline);
+    top: rem($gs-gutter + 1);
+}

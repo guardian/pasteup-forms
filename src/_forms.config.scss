@@ -109,7 +109,7 @@ $pasteup-forms-input-border-colour-focus: guss-colour(guardian-brand, $pasteup-p
 $pasteup-forms-note-colour: guss-colour(neutral-2, $pasteup-palette) !default;
 
 
-// Error
+// Errors
 // ============================================================================
 
 /**
@@ -155,3 +155,62 @@ $pasteup-forms-error-input-border-colour: guss-colour(error, $pasteup-palette) !
  * @group forms
  */
 $pasteup-forms-error-message-colour: guss-colour(error, $pasteup-palette) !default;
+
+
+// Pseudo radio buttons
+// ============================================================================
+
+/**
+ * Pseudo radio's `color`.
+ *
+ * @type Color
+ *
+ * @requires {function} guss-colour
+ *
+ * @group forms
+ */
+$pasteup-forms-radio-colour: guss-colour(neutral-4, $pasteup-palette) !default;
+
+/**
+ * Pseudo radio's `color` when checked.
+ *
+ * @type Color
+ *
+ * @requires {function} guss-colour
+ *
+ * @group forms
+ */
+$pasteup-forms-radio-colour-checked: guss-colour(guardian-brand, $pasteup-palette) !default;
+
+/**
+ * Pseudo radio's `border` style.
+ *
+ * @type List
+ *
+ * @requires {function} guss-colour
+ *
+ * @group forms
+ */
+$pasteup-forms-radio-border: 1px solid transparent !default;
+
+/**
+ * Pseudo radio's `border-color` when hovered.
+ *
+ * @type List
+ *
+ * @requires {function} guss-colour
+ *
+ * @group forms
+ */
+$pasteup-forms-radio-border-hover: 1px solid guss-colour(neutral-2, $pasteup-palette) !default;
+
+/**
+ * Pseudo radio's `border-color` when checked.
+ *
+ * @type List
+ *
+ * @requires {function} guss-colour
+ *
+ * @group forms
+ */
+$pasteup-forms-radio-border-checked: 1px solid guss-colour(guardian-brand, $pasteup-palette) !default;
