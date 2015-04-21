@@ -46,9 +46,9 @@ module.exports = function(grunt) {
                 },
                 {
                     expand: true,
-                    cwd: 'cortana',
+                    cwd: 'theme',
                     src: 'base.scss',
-                    dest: 'build',
+                    dest: 'theme',
                     ext: '.min.css'
                 }]
             }
