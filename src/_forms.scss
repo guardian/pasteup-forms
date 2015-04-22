@@ -20,7 +20,8 @@ category: Common
                 <input type="text" class="input-text" name="field-1" id="field-1">
             </div>
             <div class="form-field">
-                <label class="label optional-marker" for="field-2">Another label</label>
+                <label class="label label--inline" for="field-2">Another label</label>
+                <span class="form-note">(optional)</span>
                 <input type="text" class="input-text" name="field-2" id="field-2">
                 <div class="form-note">Lorem ipsum dolor sit amet</div>
             </div>
@@ -328,16 +329,6 @@ category: Common
 
 .input-textarea--long {
     min-height: rem(($gs-baseline / 3) * 40);
-}
-
-.optional-marker {
-    &:after {
-        vertical-align: middle;
-        content: '(optional)';
-        color: $pasteup-forms-note-colour;
-        @include fs-textSans(1);
-        margin-left: rem(4px);
-    }
 }
 
 .select {
