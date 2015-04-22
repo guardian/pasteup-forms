@@ -235,7 +235,7 @@ category: Common
     color: $pasteup-forms-input-colour;
     border: 1px solid $pasteup-forms-input-border-colour;
     @include f-textSans;
-    @include font-size(16px, 22px);
+    font-size: inherit;
     padding: rem(8px) rem(8px) rem(7px);
     outline: none;
     @include box-sizing(border-box);
@@ -244,10 +244,6 @@ category: Common
 
     &:focus {
         border-color: $pasteup-forms-input-border-colour-focus;
-    }
-
-    @include mq(tablet) {
-        font-size: rem(14px);
     }
 }
 
