@@ -46,77 +46,11 @@ category: Common
                     </div>
                 </label>
             </div>
-        </div>
-    </fieldset>
-    <fieldset class="fieldset">
-        <div class="fieldset__heading">
-            <h2 class="fieldset__headline">Payment options</h2>
-            <div class="fieldset__note">
-                <div class="credit-card-note">
-                    <h3 class="credit-card-note__header">First payment</h3>
-                    <p class="credit-card-note__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="credit-card-note">
-                    <h3 class="credit-card-note__header">Ongoing payments</h3>
-                    <p class="credit-card-note__body">Donec quis rutrum tortor, id pretium massa. In hac habitasse platea dictumst.</p>
-                </div>
-                <div class="credit-card-note">
-                    <h3 class="credit-card-note__header">Cancellation</h3>
-                    <p class="credit-card-note__body">Imperdiet ut, congue laoreet quam. Donec finibus nisi sit amet.</p>
-                </div>
-            </div>
-        </div>
-        <div class="fieldset__fields">
             <div class="form-field">
-                <label class="label" for="cc-num">Card number</label>
-                <input type="tel" class="input-text" id="cc-num">
-            </div>
-            <div class="form-field">
-                <label class="label" for="cc-cvc">Security code</label>
-                <input type="tel" class="input-text input-text--small" id="cc-cvc">
-                <div class="cvc">
-                    <div class="cvc__image">
-                        <img src="../src/images/cvc-card.png" alt="CVC explanation">
-                    </div>
-                    <div class="cvc__detail">
-                        <h3 class="cvc__heading">Visa, Mastercard</h3>
-                        <p class="cvc__body">The last 3 digits printed on the back within the signature strip</p>
-                    </div>
-                    <div class="cvc__image">
-                        <img src="../src/images/cvc-card-american-express.png" alt="CVC explanation American Express">
-                    </div>
-                    <div class="cvc__detail">
-                        <h3 class="cvc__heading">American Express</h3>
-                        <p class="cvc__body">The 4 digits printed on the front above the card number</p>
-                    </div>
-                </div>
-            </div>
-            <div class="form-field">
-                <label class="label" for="cc-exp-month"><span>Expiry</span></label>
-                <select class="select" id="cc-exp-month">
-                    <option selected="selected">Month</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                </select>
-                <span> / </span>
-                <select class="select" id="cc-exp-year">
-                    <option selected="selected">Year</option>
-                    <option value="2015">15</option>
-                    <option value="2016">16</option>
-                    <option value="2017">17</option>
-                    <option value="2018">18</option>
-                    <option value="2019">19</option>
-                    <option value="2020">20</option>
+                <label class="label" for="field-5">Select label</label>
+                <select class="select select--wide" id="field-5">
+                    <option val="1">Lorem ipsum dolor sit amet</option>
+                    <option val="2">Consectetur adipisicing elit</option>
                 </select>
             </div>
         </div>
@@ -392,55 +326,4 @@ category: Common
 .pseudo-radio__note {
     @include fs-textSans(3);
     margin: 0;
-}
-
-// Cvc
-// ============================================================================
-
-.cvc {
-    font-family: $f-sans-serif-text;
-    padding: rem($gs-baseline / 2) rem($gs-baseline / 2) rem($gs-baseline / 2) 0;
-    font-size: rem(13px);
-    line-height: rem(16px);
-}
-
-.cvc__image {
-    float: left;
-}
-
-.cvc__detail {
-    margin-left: rem(70px);
-}
-
-.cvc__heading {
-    color: $pasteup-forms-label-colour;
-    font-weight: bold;
-    font-family: $f-sans-serif-text;
-    font-size: rem(13px);
-    line-height: rem(16px);
-    margin: 0;
-}
-
-.cvc__body {
-    color: $pasteup-forms-label-colour;
-    margin-top: 0;
-    margin-bottom: rem(16px);
-}
-
-
-// Credit card notes
-// ============================================================================
-
-.credit-card-note {
-    color: $pasteup-forms-note-colour;
-}
-
-.credit-card-note__header {
-    @include fs-textSans(3);
-    color: $pasteup-forms-label-colour;
-    margin: 0;
-}
-
-.credit-card-note__body {
-    margin-top: 0;
 }
