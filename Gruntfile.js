@@ -43,13 +43,6 @@ module.exports = function(grunt) {
                     ],
                     dest: 'build',
                     ext: '.min.css'
-                },
-                {
-                    expand: true,
-                    cwd: 'theme',
-                    src: 'base.scss',
-                    dest: 'theme',
-                    ext: '.min.css'
                 }]
             }
         },
