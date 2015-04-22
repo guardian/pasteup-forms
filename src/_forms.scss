@@ -68,8 +68,6 @@ category: Common
 ```
 */
 
-@import 'mixins';
-
 /**
  * Fix a bug Internet Explorer 8 where text in password fields
  * would become invisible when `font-family` references a webfont.
@@ -296,7 +294,15 @@ category: Common
     }
 
     &:before {
-        @include radio-circle($pasteup-forms-radio-colour);
+        @include border-radius(50%);
+        content: ' ';
+        background-color: $pasteup-forms-radio-colour;
+        width: rem($gs-baseline + 4);
+        height: rem($gs-baseline + 4);
+        display: block;
+        position: absolute;
+        left: rem($gs-baseline);
+        top: rem($gs-gutter + 1);
     }
 }
 
