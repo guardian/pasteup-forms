@@ -259,8 +259,8 @@ category: Common
     resize: vertical;
 }
 
-.input-textarea--long {
-    min-height: rem(($gs-baseline / 3) * 40);
+.input-textarea--deep {
+    min-height: gs-height(4);
 }
 
 .select {
@@ -275,7 +275,7 @@ category: Common
 .select--minimal {
     border: 0;
     outline: 0;
-    background-color: #ffffff;
+    background-color: transparent;
     font-weight: bold;
 }
 
@@ -283,7 +283,7 @@ category: Common
 // ============================================================================
 
 .pseudo-radio {
-    @include box-sizing(border-box);
+    box-sizing: border-box;
     width: 100%;
     border: $pasteup-forms-radio-border;
     padding: rem($gs-baseline) rem($gs-gutter) rem($gs-baseline) rem(36px);
