@@ -104,6 +104,18 @@ category: Common
     background-color: $pasteup-forms-fieldset-background-colour;
 }
 
+.fieldset--single {
+    .fieldset__heading {
+        display: block;
+        padding-right: $gs-gutter / 2;
+        width: auto;
+    }
+
+    .fieldset__fields {
+        padding-left: $gs-gutter / 2;
+    }
+}
+
 .fieldset--simple {
     background-color: transparent;
     border-bottom: 0;
@@ -242,6 +254,10 @@ category: Common
 
 .input-text--small {
     width: 30%;
+}
+
+.input-text--xsmall {
+    width: 15%;
 }
 
 .input-textarea {
