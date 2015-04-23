@@ -47,6 +47,19 @@ category: Common
                 </label>
             </div>
             <div class="form-field">
+                <div class="checkbox">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit:
+                    <label class="label">
+                        <input type="checkbox">
+                        Checkbox one
+                    </label>
+                    <label class="label">
+                        <input type="checkbox">
+                        Checkbox two
+                    </label>
+                </div>
+            </div>
+            <div class="form-field">
                 <label class="label" for="field-5">Select label</label>
                 <select class="select select--wide" id="field-5">
                     <option val="1">Lorem ipsum dolor sit amet</option>
@@ -282,6 +295,17 @@ category: Common
     outline: 0;
     background-color: transparent;
     font-weight: bold;
+}
+
+// Checkbox
+// ============================================================================
+
+.checkbox {
+    @include fs-textSans(3);
+
+    .label {
+        font: inherit;
+    }
 }
 
 // Psuedo radio form inputs
