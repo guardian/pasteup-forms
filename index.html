@@ -94,68 +94,140 @@
 </div><div class="codeExample"><div class="exampleOutput"><form class="form">
     <fieldset class="fieldset">
         <div class="fieldset__heading">
-            <h2 class="form__heading">
-                Form Heading
-            </h2>
-            <div class="form__note">
-                Form Note. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ratione!
-            </div>
+            <h2 class="fieldset__headline">Form Heading</h2>
+            <div class="fieldset__note">Form Note. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
         </div>
         <div class="fieldset__fields">
-            <ul>
-                <li class="form-field">
-                    <label class="label" for="field-1">Label</label>
-                    <input class="text-input" name="field-1" />
-                </li>
-                <li class="form-field">
-                    <label class="label" for="field-2">Another label</label>
-                    <input class="text-input" name="field-2" />
-                </li>
-                <li class="form-field">
-                    <div class="form-field__note">
-                        <a href="#">Forgotten your password?</a>
+            <div class="form-field">
+                <label class="label" for="field-1">Label</label>
+                <input type="text" class="input-text" name="field-1" id="field-1">
+            </div>
+            <div class="form-field">
+                <label class="label label--inline" for="field-2">Another label</label>
+                <span class="form-note">(optional)</span>
+                <input type="text" class="input-text" name="field-2" id="field-2">
+                <div class="form-note">Lorem ipsum dolor sit amet</div>
+            </div>
+            <div class="form-field form-field--error">
+                <label class="label" for="field-3">Error field</label>
+                <input type="text" class="input-text" name="field-3" id="field-3">
+                <p class="form-field__error-message">This field has an error</p>
+            </div>
+            <div class="form-field">
+                <label class="label" for="option-one">
+                    <input type="radio" class="pseudo-radio-input" name="field-4" id="option-one" value="option-one" checked="checked">
+                    <div class="pseudo-radio">
+                        <div class="pseudo-radio__header">Option one</div>
+                        <p class="pseudo-radio__note">Lorem ipsum dolor sit amet</p>
                     </div>
-                    <button type="submit" class="submit-input">Submit</button>
-                    <label class="check-label check-label--helper">
-                        <input type="checkbox" />
-                        Remember me
+                </label>
+                <label class="label" for="option-two">
+                    <input type="radio" class="pseudo-radio-input" name="field-4" id="option-two" value="option-two">
+                    <div class="pseudo-radio">
+                        <div class="pseudo-radio__header">Option two</div>
+                        <p class="pseudo-radio__note">Consectetur adipisicing elit</p>
+                    </div>
+                </label>
+            </div>
+            <div class="form-field">
+                <div class="checkbox">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit:
+                    <label class="label">
+                        <input type="checkbox">
+                        Checkbox one
                     </label>
-                </li>
-            </ul>
+                    <label class="label">
+                        <input type="checkbox">
+                        Checkbox two
+                    </label>
+                </div>
+            </div>
+            <div class="form-field">
+                <label class="label" for="field-5">Select label</label>
+                <select class="select select--wide" id="field-5">
+                    <option val="1">Lorem ipsum dolor sit amet</option>
+                    <option val="2">Consectetur adipisicing elit</option>
+                </select>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="fieldset fieldset--simple">
+        <div class="fieldset__heading"></div>
+        <div class="fieldset__fields">
+            <p class="form-note">By joining Guardian Membership, you are agreeing to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+            <div class="actions">
+                <button type="submit" class="button button--primary button--large">Submit</button>
+            </div>
         </div>
     </fieldset>
 </form>
 </div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"fieldset"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fieldset__heading"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"form__heading"</span><span class="nt">&gt;</span>
-                Form Heading
-            <span class="nt">&lt;/h2&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form__note"</span><span class="nt">&gt;</span>
-                Form Note. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ratione!
-            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"fieldset__headline"</span><span class="nt">&gt;</span>Form Heading<span class="nt">&lt;/h2&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fieldset__note"</span><span class="nt">&gt;</span>Form Note. Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fieldset__fields"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;ul&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"form-field"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span> <span class="na">for=</span><span class="s">"field-1"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
-                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"text-input"</span> <span class="na">name=</span><span class="s">"field-1"</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"form-field"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span> <span class="na">for=</span><span class="s">"field-2"</span><span class="nt">&gt;</span>Another label<span class="nt">&lt;/label&gt;</span>
-                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"text-input"</span> <span class="na">name=</span><span class="s">"field-2"</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"form-field"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-field__note"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Forgotten your password?<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span> <span class="na">for=</span><span class="s">"field-1"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"input-text"</span> <span class="na">name=</span><span class="s">"field-1"</span> <span class="na">id=</span><span class="s">"field-1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label label--inline"</span> <span class="na">for=</span><span class="s">"field-2"</span><span class="nt">&gt;</span>Another label<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-note"</span><span class="nt">&gt;</span>(optional)<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"input-text"</span> <span class="na">name=</span><span class="s">"field-2"</span> <span class="na">id=</span><span class="s">"field-2"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-note"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-field form-field--error"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span> <span class="na">for=</span><span class="s">"field-3"</span><span class="nt">&gt;</span>Error field<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"input-text"</span> <span class="na">name=</span><span class="s">"field-3"</span> <span class="na">id=</span><span class="s">"field-3"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-field__error-message"</span><span class="nt">&gt;</span>This field has an error<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span> <span class="na">for=</span><span class="s">"option-one"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"pseudo-radio-input"</span> <span class="na">name=</span><span class="s">"field-4"</span> <span class="na">id=</span><span class="s">"option-one"</span> <span class="na">value=</span><span class="s">"option-one"</span> <span class="na">checked=</span><span class="s">"checked"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pseudo-radio"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pseudo-radio__header"</span><span class="nt">&gt;</span>Option one<span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"pseudo-radio__note"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/p&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"submit-input"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"check-label check-label--helper"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&gt;</span>
-                        Remember me
+                <span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span> <span class="na">for=</span><span class="s">"option-two"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"pseudo-radio-input"</span> <span class="na">name=</span><span class="s">"field-4"</span> <span class="na">id=</span><span class="s">"option-two"</span> <span class="na">value=</span><span class="s">"option-two"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pseudo-radio"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pseudo-radio__header"</span><span class="nt">&gt;</span>Option two<span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"pseudo-radio__note"</span><span class="nt">&gt;</span>Consectetur adipisicing elit<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit:
+                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+                        Checkbox one
                     <span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;/ul&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+                        Checkbox two
+                    <span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span> <span class="na">for=</span><span class="s">"field-5"</span><span class="nt">&gt;</span>Select label<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"select select--wide"</span> <span class="na">id=</span><span class="s">"field-5"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">val=</span><span class="s">"1"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">val=</span><span class="s">"2"</span><span class="nt">&gt;</span>Consectetur adipisicing elit<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;/select&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"fieldset fieldset--simple"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fieldset__heading"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fieldset__fields"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-note"</span><span class="nt">&gt;</span>By joining Guardian Membership, you are agreeing to our <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Terms and Conditions<span class="nt">&lt;/a&gt;</span> and <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Privacy Policy<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"actions"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"button button--primary button--large"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/fieldset&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
