@@ -49,6 +49,17 @@ $pasteup-forms-fieldset-background-colour: guss-colour(neutral-8, $pasteup-palet
  */
 $pasteup-forms-fieldset-headline-colour: guss-colour(neutral-1, $pasteup-palette) !default;
 
+/**
+ * Fieldset num's `color`.
+ *
+ * @type Color
+ *
+ * @requires {function} guss-colour
+ *
+ * @group forms
+ */
+$pasteup-forms-fieldset-num-colour: guss-colour(news-main-2, $pasteup-palette) !default;
+
 
 // Text fields (eg: textarea and text input), labels and notes
 // ============================================================================

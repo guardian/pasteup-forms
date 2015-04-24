@@ -160,6 +160,12 @@ category: Common
     margin: 0;
 }
 
+.fieldset__num {
+    margin-right: $gs-gutter/4;
+    color: $pasteup-forms-fieldset-num-colour;
+}
+
+
 .fieldset__note {
     @include fs-textSans(2);
     color: $pasteup-forms-note-colour;
