@@ -21,7 +21,7 @@
     "guss-css3": "~2.2.1",
     "guss-webfonts": "~3.0.0",
     "guss-rem": "~1.2.0",
-    "pasteup-buttons": "~0.5.0"
+    "pasteup-buttons": "~2.0.0"
   },
   "devDependencies": {
     "Cortana": "~1.2.7"
